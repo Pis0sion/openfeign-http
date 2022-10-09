@@ -55,7 +55,7 @@ class CoreMiddleware extends RpcCoreMiddleware
         $factory = make(DispatcherFactory::class, [
             'pathGenerator' => $this->protocol->getPathGenerator(),
         ]);
-        
+
         return $factory->getDispatcher($serverName);
     }
 
